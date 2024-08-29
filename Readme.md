@@ -36,6 +36,8 @@ The imitation learning makes sense in such systems, and a lot of prior successfu
 
 > Note : There also exist a lot of works to learn policy from expert's behaviors in gaming - such as, [1](https://www.nature.com/articles/nature16961), [2](https://openai.com/blog/vpt/), or [3](https://developer.nvidia.com/blog/building-generally-capable-ai-agents-with-minedojo/).
 
+This repository focuses only on fundamental model-free IL algorithms (which affected other works a lot in history), but this might also help you to learn recent SOTA IL algorithms (such as, [rank-game](https://www.microsoft.com/en-us/research/blog/unifying-learning-from-preferences-and-demonstration-via-a-ranking-game-for-imitation-learning/), etc) in the future.
+
 ## Environment and Expert Dataset
 
 This repository includes expert dataset (```./expert_data/ckpt0.pkl```), which is trained by PPO (state-of-the-art RL algorithm) to solve GridWorld environment.
