@@ -34,7 +34,7 @@ The imitation learning makes sense in such complex systems, and a lot of prior s
 
 > Note : There also exist a lot of works to learn policy from expert's behaviors in gaming - such as, [1](https://www.nature.com/articles/nature16961), [2](https://openai.com/blog/vpt/), or [3](https://developer.nvidia.com/blog/building-generally-capable-ai-agents-with-minedojo/).
 
-## About environment and expert dataset
+## Environment and Expert Dataset
 
 This repository includes expert dataset (```./expert_data/ckpt0.pkl```), which is trained by PPO (state-of-the-art RL algorithm) to solve GridWorld environment.
 
