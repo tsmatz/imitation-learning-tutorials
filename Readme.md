@@ -1,5 +1,6 @@
 # Imitation Learning Algorithms Tutorial (Python)
 
+Unlike [reinforcement learning](https://github.com/tsmatz/reinforcement-learning-tutorials), imitation learning never use prior reward's functions, but do use expert's behaviors instead.<br>
 This repository shows you the implementation examples of imitation learning (IL) from scratch in Python, with theoretical aspects behind code.
 
 In this repository, I'll focus on the following 5 methods.
@@ -12,8 +13,6 @@ In this repository, I'll focus on the following 5 methods.
 
 > Note : This repository only focuses on action-state learning, and trajectory learning (which is often applied in robotics) is out of scope. I don't also focus on model-based BC methods.<br>
 > In trajectory learning, the trajectory is modeled by [GMM](https://github.com/tsmatz/gmm), [HMM](https://github.com/tsmatz/hmm-lds-em-algorithm), or MP (Movement Primitive), etc. (See [here](https://arxiv.org/abs/1811.06711) for details.)
-
-Unlike [reinforcement learning](https://github.com/tsmatz/reinforcement-learning-tutorials), imitation learning never use prior reward's functions, but do use expert's behaviors instead.
 
 There exist two main approaches for imitation learning - Behavior Cloning (BC) and Inverse Reinforcement Learning (IRL).
 
@@ -36,7 +35,7 @@ The imitation learning makes sense in such systems, and a lot of prior successfu
 
 > Note : There also exist a lot of works to learn policy from expert's behaviors in gaming - such as, [1](https://www.nature.com/articles/nature16961), [2](https://openai.com/blog/vpt/), or [3](https://developer.nvidia.com/blog/building-generally-capable-ai-agents-with-minedojo/).
 
-This repository focuses only on fundamental model-free IL algorithms (which affected other works a lot in history), but this might also help you to learn recent SOTA IL algorithms (such as, [rank-game](https://www.microsoft.com/en-us/research/blog/unifying-learning-from-preferences-and-demonstration-via-a-ranking-game-for-imitation-learning/), etc) in the future.
+This repository focuses only on fundamental model-free IL algorithms (which affected other works a lot in history), but this might also help you to learn recent IL algorithms (such as, [rank-game](https://www.microsoft.com/en-us/research/blog/unifying-learning-from-preferences-and-demonstration-via-a-ranking-game-for-imitation-learning/), etc) in the future.
 
 ## Environment and Expert Dataset
 
