@@ -46,14 +46,13 @@ The following is the game rule of GridWorld environment used in this repository.
 
 - It has 50 x 50 grids (cells) and the state corresponds to the location of the agent on the grid.
 - The agent has four actions to move in one of the directions of the compass.
-- When the agent reaches to the goal state (located on the bottom-right corner), a reward ```10``` is given.
-- For the remaining states, the reward was randomly set to ```0``` with probability 2/3 and to ```−1``` with probability 1/3.
-- The duration of each trajectory has maximum 200 time-step.
-- If the agent tries to exceed the border, the fail reward (i.e, reward=```-1```) is given and the agent keeps the same state.
-- The initial state is sampled from a uniform distribution on the states.
+- When the agent reaches to the goal state (located on the bottom-right corner), a reward ```10.0``` is given.
+- For the remaining states, the reward was randomly set to ```0.0``` with probability 2/3 and to ```−1.0``` with probability 1/3.
+- The duration of each trajectory has maximum ```200``` time-step.
+- If the agent tries to exceed the border, the fail reward (i.e, reward=```-1.0```) is given and the agent keeps the same state.
 
 The following picture shows GridWorld environment used in this repository (which is generated with a fixed seed value, ```1000```).<br>
-When the agent is on the gray-colored states, the agent can reach to the goal state without losing any rewards. (Thus the initial state is also selected among the gray-colored states.)
+When the agent is on the gray-colored states, the agent can reach to the goal state without losing any rewards. The initial state is sampled from a uniform distribution on the gray-colored states, and then maximum total reward in a single episode becomes ```10.0```.
 
 ![GridWorld game difinition](./assets/gridworld_definition.png)
 
