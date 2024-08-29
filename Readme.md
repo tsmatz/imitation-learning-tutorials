@@ -27,15 +27,15 @@ The methods of [Maximum Entropy Inverse Reinforcement Learning](03_maxent_irl.ip
 Finally, [Generative Adversarial Imitation Learning (GAIL)](05_gail.ipynb) is a method inspired by Generative Adversarial Networks (GANs) and IRL, but unlike IRL method, it constrains the behavior of the agent to be approximately optimal without explicitly recovering the reward's (or cost's) function. (Hence GAIL is also applied in complex systems, unlike BC + RL.)<br>
 GAIL is one of today's state-of-the-art (SOTA) imitation learning algorithm.
 
+This repository focuses only on fundamental model-free IL algorithms (which affected other works a lot in history), but this might also help you to learn other recent IL algorithms (such as, [rank-game](https://www.microsoft.com/en-us/research/blog/unifying-learning-from-preferences-and-demonstration-via-a-ranking-game-for-imitation-learning/), etc).
+
 In this repository, I'll often use basic terminologies for behavioral learning - such as, "discount", "policy", "advantages", etc.<br>
 If you're new to learn behavioral learning, I recommend you to learn [reinforcement learning (RL)](https://github.com/tsmatz/reinforcement-learning-tutorials) briefly at first.
 
-Reinforcement learning (RL) has achived a great success in a wide variety of agentic and autonomous tasks. However, it's sometimes time-consuming and hard to learn from scratch in case of some complex tasks.<br>
+Reinforcement learning (RL) has achieved a great success in a wide variety of agentic and autonomous tasks. However, it's sometimes time-consuming and hard to learn from scratch in case of some complex tasks.<br>
 The imitation learning makes sense in such systems, and a lot of prior successful works show us the benefits to provide prior knowledge by imitation learning, before applying reinforcement learning directly.
 
 > Note : There also exist a lot of works to learn policy from expert's behaviors in gaming - such as, [1](https://www.nature.com/articles/nature16961), [2](https://openai.com/blog/vpt/), or [3](https://developer.nvidia.com/blog/building-generally-capable-ai-agents-with-minedojo/).
-
-This repository focuses only on fundamental model-free IL algorithms (which affected other works a lot in history), but this might also help you to learn recent IL algorithms (such as, [rank-game](https://www.microsoft.com/en-us/research/blog/unifying-learning-from-preferences-and-demonstration-via-a-ranking-game-for-imitation-learning/), etc) in the future.
 
 ## Environment and Expert Dataset
 
