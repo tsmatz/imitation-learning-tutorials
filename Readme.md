@@ -26,7 +26,7 @@ The examples of [Maximum Entropy Inverse Reinforcement Learning](03_maxent_irl.i
 [Generative Adversarial Imitation Learning (GAIL)](05_gail.ipynb) is the method inspired by Generative Adversarial Networks (GANs) and IRL, but unlike IRL, it constrains the behavior of the agent to be approximately optimal without explicitly recovering the reward's (or cost's) function.<br>
 GAIL is the state-of-the-art imitation learning algorithm.
 
-In this repository, I'll often use basic terminologies for behavioral learning - such as, discount, policy, advantages, etc.<br>
+In this repository, I'll often use basic terminologies for behavioral learning - such as, "discount", "policy", "advantages", etc.<br>
 If you're new to learn behavioral learning, I recommend you to learn [Reinforcement learning (RL)](https://github.com/tsmatz/reinforcement-learning-tutorials) briefly at first.
 
 Reinforcement learning (RL) has achived a great success in a wide variety of agent's and autonomous tasks. However, it's sometimes time-consuming and hard to learn from scratch in case of some complex tasks.<br>
