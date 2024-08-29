@@ -13,24 +13,24 @@ In this repository, I'll focus on the following 5 methods.
 > Note : This repository only focuses on action-state learning, and trajectory learning (which is often applied in robotics) is out of scope. I don't also focus on model-based BC methods.<br>
 > In trajectory learning, the trajectory is modeled by [GMM](https://github.com/tsmatz/gmm), [HMM](https://github.com/tsmatz/hmm-lds-em-algorithm), or MP (Movement Primitive), etc. (See [here](https://arxiv.org/abs/1811.06711) for details.)
 
-There exist two main approaches for imitation learning - Behavior Cloning (BC) and Inverse Reinforcement Learning (IRL).<br>
-Unlike [reinforcement learning](https://github.com/tsmatz/reinforcement-learning-tutorials), both approaches don't need prior reward's functions, but do need expert's behaviors.
+Unlike [reinforcement learning](https://github.com/tsmatz/reinforcement-learning-tutorials), imitation learning never use prior reward's functions, but do use expert's behaviors instead.<br>
+There exist two main approaches for imitation learning - Behavior Cloning (BC) and Inverse Reinforcement Learning (IRL).
 
 **Behavioral Cloning (BC)** directly learns expert's (demonstrated) behaviors without reward functions, in which the optimal mapping from states to actions is explored. It simply finds optimal solution by solving a regression or classification problem using expert's behaviors (dataset) as a supervised learning problem.<br>
-The examples of [Behavior Cloning (BC)](01_bc.ipynb) and [Dataset Aggregation (DAgger)](02_dagger.ipynb) belongs to this approach.
+The methods of [Behavior Cloning (BC)](01_bc.ipynb) and [Dataset Aggregation (DAgger)](02_dagger.ipynb) belongs to this approach.
 
 **Inverse Reinforcement Learning (IRL)**, on the other hand, is a method to learn a cost function, i.e, recovering the unknown reward function from expert's behaviors, and then extract a policy
-from that cost function with reinforcement learning. In complex systems, it'll often be difficult to design with manual reward functions. In such cases, Inverse Reinforcement Learning (IRL) will come into play.<br>
-The examples of [Maximum Entropy Inverse Reinforcement Learning](03_maxent_irl.ipynb) and [Relative Entropy Inverse Reinforcement Learning](04_relent_irl.ipynb) belongs to this approach.
+from the generated cost function with reinforcement learning. In complex systems, it'll often be difficult to design manual reward functions. In such cases, Inverse Reinforcement Learning (IRL) will come into play.<br>
+The methods of [Maximum Entropy Inverse Reinforcement Learning](03_maxent_irl.ipynb) and [Relative Entropy Inverse Reinforcement Learning](04_relent_irl.ipynb) belongs to this approach.
 
-[Generative Adversarial Imitation Learning (GAIL)](05_gail.ipynb) is the method inspired by Generative Adversarial Networks (GANs) and IRL, but unlike IRL, it constrains the behavior of the agent to be approximately optimal without explicitly recovering the reward's (or cost's) function.<br>
-GAIL is the state-of-the-art imitation learning algorithm.
+Finally, [Generative Adversarial Imitation Learning (GAIL)](05_gail.ipynb) is a method inspired by Generative Adversarial Networks (GANs) and IRL, but unlike IRL method, it constrains the behavior of the agent to be approximately optimal without explicitly recovering the reward's (or cost's) function.<br>
+Today GAIL is the state-of-the-art imitation learning algorithm.
 
 In this repository, I'll often use basic terminologies for behavioral learning - such as, "discount", "policy", "advantages", etc.<br>
 If you're new to learn behavioral learning, I recommend you to learn [Reinforcement learning (RL)](https://github.com/tsmatz/reinforcement-learning-tutorials) briefly at first.
 
-Reinforcement learning (RL) has achived a great success in a wide variety of agent's and autonomous tasks. However, it's sometimes time-consuming and hard to learn from scratch in case of some complex tasks.<br>
-The imitation learning makes sense in such complex systems, and a lot of prior works show us the benefits to provide prior knowledge to get optimal policy by imitation learning, before applying reinforcement learning directly.
+Reinforcement learning (RL) has achived a great success in a wide variety of agentic and autonomous tasks. However, it's sometimes time-consuming and hard to learn from scratch in case of some complex tasks.<br>
+The imitation learning makes sense in such complex systems, and a lot of prior successful works show us the benefits to provide prior knowledge by imitation learning, before applying reinforcement learning directly.
 
 > Note : There also exist a lot of works to learn policy from expert's behaviors in gaming - such as, [1](https://www.nature.com/articles/nature16961), [2](https://openai.com/blog/vpt/), or [3](https://developer.nvidia.com/blog/building-generally-capable-ai-agents-with-minedojo/).
 
