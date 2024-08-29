@@ -52,7 +52,7 @@ The following is the game rule of GridWorld environment used in this repository.
 - If the agent tries to exceed the border, the fail reward (i.e, reward=```-1.0```) is given and the agent keeps the same state.
 
 The following picture shows GridWorld environment used in this repository (which is generated with a fixed seed value, ```1000```).<br>
-When the agent is on the gray-colored states, the agent can reach to the goal state without losing any rewards. The initial state is sampled from a uniform distribution on the gray-colored states, and then maximum total reward in a single episode becomes ```10.0```.
+When the agent is on the gray-colored states, the agent can reach to the goal state without losing any rewards. The initial state is sampled from a uniform distribution on the gray-colored states, and then maximum total reward in a single episode always becomes ```10.0```.
 
 ![GridWorld game difinition](./assets/gridworld_definition.png)
 
