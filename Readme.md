@@ -29,7 +29,7 @@ Finally, [Generative Adversarial Imitation Learning (GAIL)](05_gail.ipynb) is a 
 GAIL is one of today's state-of-the-art (SOTA) imitation learning algorithm.
 
 In this repository, I'll often use basic terminologies for behavioral learning - such as, "discount", "policy", "advantages", etc.<br>
-If you're new to learn behavioral learning, I recommend you to learn [Reinforcement learning (RL)](https://github.com/tsmatz/reinforcement-learning-tutorials) briefly at first.
+If you're new to learn behavioral learning, I recommend you to learn [reinforcement learning (RL)](https://github.com/tsmatz/reinforcement-learning-tutorials) briefly at first.
 
 Reinforcement learning (RL) has achived a great success in a wide variety of agentic and autonomous tasks. However, it's sometimes time-consuming and hard to learn from scratch in case of some complex tasks.<br>
 The imitation learning makes sense in such complex systems, and a lot of prior successful works show us the benefits to provide prior knowledge by imitation learning, before applying reinforcement learning directly.
