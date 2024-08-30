@@ -2,7 +2,10 @@
 
 Such like [reinforcement learning](https://github.com/tsmatz/reinforcement-learning-tutorials), imitation learning is an approach to learn how the agent takes the action to get optimal results. However, unlike reinforcement learning, imitation learning never use prior reward's functions, but do use expert's behaviors instead.<br>
 
-This repository shows you the implementation examples of imitation learning (IL) from scratch in Python, with theoretical aspects behind code.<br>
+This repository shows you the implementation examples of imitation learning (IL) from scratch in Python, with theoretical aspects behind code.
+
+## Table of Contents
+
 In this repository, I'll focus on the following 5 methods.
 
 - [Behavior Cloning (BC)](01_bc.ipynb)
