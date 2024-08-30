@@ -1,12 +1,8 @@
 # Imitation Learning Algorithms Tutorial (Python)
 
-Such like [reinforcement learning](https://github.com/tsmatz/reinforcement-learning-tutorials), imitation learning is an approach to learn how the agent takes the action to get optimal results. However, unlike reinforcement learning, imitation learning never use prior reward's functions, but do use expert's behaviors instead.<br>
-
 This repository shows you the implementation examples of imitation learning (IL) from scratch in Python, with theoretical aspects behind code.
 
 ## Table of Contents
-
-In this repository, I'll focus on the following 5 methods.
 
 - [Behavior Cloning (BC)](01_bc.ipynb)
 - [Dataset Aggregation (DAgger)](02_dagger.ipynb)
@@ -14,8 +10,16 @@ In this repository, I'll focus on the following 5 methods.
 - [Relative Entropy Inverse Reinforcement Learning (rel-ent IRL)](04_relent_irl.ipynb)
 - [Generative Adversarial Imitation Learning (GAIL)](05_gail.ipynb)
 
-> Note : This repository only focuses on action-state learning, and trajectory learning (which is often applied in robotics) is out of scope. I don't also focus on model-based BC methods.<br>
+In this repository, I focus on above 5 model-free IL methods (which affected other works a lot in history), but this might also help you learn other recent IL algorithms (such as, [rank-game](https://www.microsoft.com/en-us/research/blog/unifying-learning-from-preferences-and-demonstration-via-a-ranking-game-for-imitation-learning/), etc).
+
+In this repository, I'll often use basic terminologies for behavioral learning - such as, "discount", "policy", "advantages", ... If you're new to learn behavioral learning, I recommend you to learn [reinforcement learning (RL)](https://github.com/tsmatz/reinforcement-learning-tutorials) briefly at first.
+
+> Note : Also, this repository only focuses on action-state learning, and trajectory learning (which is sometimes applied in robotics) is out of scope.<br>
 > In trajectory learning, the trajectory is modeled by [GMM](https://github.com/tsmatz/gmm), [HMM](https://github.com/tsmatz/hmm-lds-em-algorithm), or MP (Movement Primitive), etc. (See [here](https://arxiv.org/abs/1811.06711) for details.)
+
+## Imitation Learning - What's and How ?
+
+Such like [reinforcement learning](https://github.com/tsmatz/reinforcement-learning-tutorials), imitation learning is an approach to learn how the agent takes the action to get optimal results. However, unlike reinforcement learning, imitation learning never use prior reward's functions, but do use expert's behaviors instead.<br>
 
 There exist two main approaches for imitation learning - Behavior Cloning (BC) and Inverse Reinforcement Learning (IRL).
 
@@ -29,11 +33,6 @@ The methods of [Maximum Entropy Inverse Reinforcement Learning](03_maxent_irl.ip
 
 Finally, [Generative Adversarial Imitation Learning (GAIL)](05_gail.ipynb) is a method inspired by Generative Adversarial Networks (GANs) and IRL, but unlike IRL method, it constrains the behavior of the agent to be approximately optimal without explicitly recovering the reward's (or cost's) function. (Hence GAIL is also applied in complex systems, unlike BC + RL.)<br>
 GAIL is one of today's state-of-the-art (SOTA) imitation learning algorithm.
-
-This repository focuses only on fundamental model-free IL algorithms (which affected other works a lot in history), but this might also help you to learn other recent IL algorithms (such as, [rank-game](https://www.microsoft.com/en-us/research/blog/unifying-learning-from-preferences-and-demonstration-via-a-ranking-game-for-imitation-learning/), etc).
-
-In this repository, I'll often use basic terminologies for behavioral learning - such as, "discount", "policy", "advantages", etc.<br>
-If you're new to learn behavioral learning, I recommend you to learn [reinforcement learning (RL)](https://github.com/tsmatz/reinforcement-learning-tutorials) briefly at first.
 
 Reinforcement learning (RL) has achieved a great success in a wide variety of agentic and autonomous tasks. However, it's sometimes time-consuming and hard to learn from scratch in case of some complex tasks.<br>
 The imitation learning makes sense in such systems, and a lot of prior successful works show us the benefits to provide prior knowledge by imitation learning, before applying reinforcement learning directly.
