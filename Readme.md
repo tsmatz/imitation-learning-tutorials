@@ -58,7 +58,16 @@ When the agent is on the gray-colored states, the agent can reach to the goal st
 
 ![GridWorld game difinition](./assets/gridworld_definition.png)
 
-This repository also includes the script [00_generate_expert_trajectories.ipynb](./00_generate_expert_trajectories.ipynb) which is used to create expert model and expert dataset.<br>
+The expert dataset ```./expert_data/ckpt0.pkl``` includes the following entities.
+
+| name          | description |
+| ------------- | ------- |
+| states        | Numpy array of visited states.<br>The state is an integer - in which, the left-top corner is ```0``` and the right-bottom corner is ```2499```. |
+| actions       | Numpy array of corresponding actions to be taken.<br>The action is also an integer - in which, 0=UP 1=DOWN 2=LEFT 3=RIGHT. |
+| rewards       | Numpy array of corresponding rewards to be obtained.<br>**This is never used in imitation learning.** (This is for reference.) |
+| timestep_lens | Numpy array of time-step length.<br>Thus, the length of this array becomes the number of episodes. |
+
+This repository also has the script [00_generate_expert_trajectories.ipynb](./00_generate_expert_trajectories.ipynb) which is used to create expert model and dataset.<br>
 By modifying and running this script, you can also customize and build your own expert demonstrations.
 
 > Note : By setting ```transition_prob=True``` in environment's constructor, you can apply the transition probability - in which, the action succeeds with probability `0.7`, a failure results in a uniform random transition to one of the adjacent states (i.e, `0.1`, `0.1`, `0.1` respectively).<br>
