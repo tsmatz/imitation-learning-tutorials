@@ -65,7 +65,7 @@ The expert dataset ```./expert_data/ckpt0.pkl``` includes the following entities
 | states        | Numpy array of visited states.<br>The state is an integer - in which, the left-top corner is ```0``` and the right-bottom corner is ```2499```. |
 | actions       | Numpy array of corresponding actions to be taken.<br>The action is also an integer - in which, 0=UP 1=DOWN 2=LEFT 3=RIGHT. |
 | rewards       | Numpy array of corresponding rewards to be obtained.<br>**This is never used in imitation learning.** (This is for reference.) |
-| timestep_lens | Numpy array of time-step length.<br>Thus, the length of this array becomes the number of episodes. |
+| timestep_lens | Numpy array of time-step length.<br>Thus, the length of this array becomes the number of demonstration's episodes. |
 
 This repository also has the script [00_generate_expert_trajectories.ipynb](./00_generate_expert_trajectories.ipynb) which is used to create expert model and dataset.<br>
 By modifying and running this script, you can also customize and build your own expert demonstrations.
