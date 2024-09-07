@@ -28,7 +28,7 @@ When you want to refine the policy optimized by Behavioral Cloning (BC), you can
 The methods of [Behavior Cloning (BC)](01_bc.ipynb) and [Dataset Aggregation (DAgger)](02_dagger.ipynb) belongs to this approach.
 
 **Inverse Reinforcement Learning (IRL)**, on the other hand, is a method to learn a cost function, i.e, recovering the unknown reward function from expert's behaviors, and then extract a policy
-from the generated cost function with reinforcement learning. In complex systems, it'll often be difficult to design manual reward functions. In such cases, Inverse Reinforcement Learning (IRL) will come into play.<br>
+from the generated cost function with reinforcement learning. In complex systems, it'll often be difficult to design manual reward functions, especially when they involve human interaction. In such cases, Inverse Reinforcement Learning (IRL) will come into play.<br>
 The methods of [Maximum Entropy Inverse Reinforcement Learning](03_maxent_irl.ipynb) and [Relative Entropy Inverse Reinforcement Learning](04_relent_irl.ipynb) belongs to this approach.
 
 Finally, [Generative Adversarial Imitation Learning (GAIL)](05_gail.ipynb) is a method inspired by Generative Adversarial Networks (GANs) and IRL, but unlike IRL method, it constrains the behavior of the agent to be approximately optimal without explicitly recovering the reward's (or cost's) function. (Hence GAIL is also applied in complex systems, unlike BC + RL.)<br>
