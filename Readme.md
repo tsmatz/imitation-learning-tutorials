@@ -7,8 +7,9 @@ This repository shows you the implementation examples of imitation learning (IL)
 - [Behavior Cloning (BC)](01_bc.ipynb)
 - [Dataset Aggregation (DAgger)](02_dagger.ipynb)
 - [Maximum Entropy Inverse Reinforcement Learning (max-ent IRL)](03_maxent_irl.ipynb)
-- [Relative Entropy Inverse Reinforcement Learning (rel-ent IRL)](04_relent_irl.ipynb)
-- [Generative Adversarial Imitation Learning (GAIL)](05_gail.ipynb)
+- [Maximum Causal Entropy Inverse Reinforcement Learning (MCE IRL)](04_mce_irl.ipynb)
+- [Relative Entropy Inverse Reinforcement Learning (rel-ent IRL)](05_relent_irl.ipynb)
+- [Generative Adversarial Imitation Learning (GAIL)](06_gail.ipynb)
 
 In this repository, I focus on above 5 model-free IL methods (which affected other works a lot in history), but this might also help you learn other recent IL algorithms (such as, [rank-game](https://www.microsoft.com/en-us/research/blog/unifying-learning-from-preferences-and-demonstration-via-a-ranking-game-for-imitation-learning/), etc).
 
@@ -29,9 +30,9 @@ The methods of [Behavior Cloning (BC)](01_bc.ipynb) and [Dataset Aggregation (DA
 
 **Inverse Reinforcement Learning (IRL)**, on the other hand, is a method to learn a cost function, i.e, recovering the unknown reward function from expert's behaviors, and then extract a policy
 from the generated cost function with reinforcement learning. In complex systems, it'll often be difficult to design manual reward functions, especially when they involve human interaction. In such cases, Inverse Reinforcement Learning (IRL) will come into play.<br>
-The methods of [Maximum Entropy Inverse Reinforcement Learning](03_maxent_irl.ipynb) and [Relative Entropy Inverse Reinforcement Learning](04_relent_irl.ipynb) belongs to this approach.
+The methods of [Maximum Entropy Inverse Reinforcement Learning](03_maxent_irl.ipynb), [Maximum Causal Entropy Inverse Reinforcement Learning](04_mce_irl.ipynb) and [Relative Entropy Inverse Reinforcement Learning](05_relent_irl.ipynb) belongs to this approach.
 
-Finally, [Generative Adversarial Imitation Learning (GAIL)](05_gail.ipynb) is a method inspired by Generative Adversarial Networks (GANs) and IRL, but unlike IRL method, it constrains the behavior of the agent to be approximately optimal without explicitly recovering the reward's (or cost's) function. (Hence GAIL is also applied in complex systems, unlike BC + RL.)<br>
+Finally, [Generative Adversarial Imitation Learning (GAIL)](06_gail.ipynb) is a method inspired by Generative Adversarial Networks (GANs) and IRL, but unlike IRL method, it constrains the behavior of the agent to be approximately optimal without explicitly recovering the reward's (or cost's) function. (Hence GAIL is also applied in complex systems, unlike BC + RL.)<br>
 GAIL is one of today's state-of-the-art (SOTA) imitation learning algorithm.
 
 Reinforcement learning (RL) has achieved a great success in a wide variety of agentic and autonomous tasks. However, it's sometimes time-consuming and hard to learn from scratch in case of some complex tasks.<br>
