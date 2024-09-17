@@ -11,11 +11,13 @@ This repository shows you the implementation examples of imitation learning (IL)
 - [Relative Entropy Inverse Reinforcement Learning (rel-ent IRL)](05_relent_irl.ipynb)
 - [Generative Adversarial Imitation Learning (GAIL)](06_gail.ipynb)
 
-In this repository, I focus on above 5 model-free IL methods (which affected other works a lot in history), but this might also help you learn other recent IL algorithms (such as, [rank-game](https://www.microsoft.com/en-us/research/blog/unifying-learning-from-preferences-and-demonstration-via-a-ranking-game-for-imitation-learning/), etc).
+In this repository, I focus on above 6 IL methods, which affected other works a lot in history.<br>
+These are fundamental algorithms, and might then also help you learn other recent IL algorithms (such as, [rank-game](https://www.microsoft.com/en-us/research/blog/unifying-learning-from-preferences-and-demonstration-via-a-ranking-game-for-imitation-learning/), etc).
 
 In this repository, I'll often use basic terminologies for behavioral learning - such as, "discount", "policy", "advantages", ... If you're new to learn behavioral learning, I recommend you to learn [reinforcement learning (RL)](https://github.com/tsmatz/reinforcement-learning-tutorials) briefly at first.
 
-> Note : Also, this repository only focuses on action-state learning, and trajectory learning (which is sometimes applied in robotics) is out of scope.<br>
+> Note : In this repository, I focus on model-free IL algorithms.<br>
+> Also, this repository focuses on action-state learning, and trajectory learning (which is sometimes applied in robotics) is out of scope.<br>
 > In trajectory learning, the trajectory is modeled by [GMM](https://github.com/tsmatz/gmm), [HMM](https://github.com/tsmatz/hmm-lds-em-algorithm), or MP (Movement Primitive), etc. (See [here](https://arxiv.org/abs/1811.06711) for details.)
 
 ## Imitation Learning - What's and How ?
