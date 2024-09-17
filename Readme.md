@@ -12,7 +12,7 @@ This repository shows you the implementation examples of imitation learning (IL)
 - [Generative Adversarial Imitation Learning (GAIL)](06_gail.ipynb)
 
 In this repository, I focus on above 6 IL methods, which affected other works a lot in history.<br>
-These are fundamental algorithms, and might then also help you learn other recent IL algorithms (such as, [rank-game](https://www.microsoft.com/en-us/research/blog/unifying-learning-from-preferences-and-demonstration-via-a-ranking-game-for-imitation-learning/), etc).
+These are fundamental algorithms, and might also help you learn other recent IL algorithms (such as, [rank-game](https://www.microsoft.com/en-us/research/blog/unifying-learning-from-preferences-and-demonstration-via-a-ranking-game-for-imitation-learning/), etc).
 
 In this repository, I'll often use basic terminologies for behavioral learning - such as, "discount", "policy", "advantages", ... If you're new to learn behavioral learning, I recommend you to learn [reinforcement learning (RL)](https://github.com/tsmatz/reinforcement-learning-tutorials) briefly at first.
 
